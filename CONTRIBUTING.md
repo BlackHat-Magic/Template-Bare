@@ -59,29 +59,26 @@ For small, obvious fixes (typos, whitespace, build scripts), you can open a PR d
 
 Format:
 ```
-<type>(optional scope): <imperative summary>
+<type>/<optional scope>: <imperative summary in present tense>
 ```
 
 Allowed types:
 
-| Type       | Purpose                                    |
-|-----------|--------------------------------------------|
-| `feat`    | new feature or functionality               |
-| `fix`     | bug fix                                    |
-| `docs`    | documentation only                         |
-| `style`   | formatting, linting (no logic change)      |
-| `refactor`| code restructuring without behavior change |
-| `test`    | add or modify tests only                   |
-| `chore`   | tooling, maintenance, dependencies         |
-| `perf`    | performance improvement                    |
-| `build`   | build system or external dependency changes|
-| `ci`      | CI configuration changes                   |
+| Type      | Purpose                                       |
+|-----------|-----------------------------------------------|
+| `feat`    | new feature or functionality                  |
+| `fix`     | bug fix (issue # as scope if applicable       |
+| `docs`    | documentation only                            |
+| `refactor`| code restructuring without behavior change    |
+| `test`    | add or modify tests only                      |
+| `chore`   | ecosystem, formatting/linting, ci, build      |
+| `perf`    | performance improvement                       |
 
 Examples:
 ```
-feat(scheduler): add round-robin dispatch loop
-fix(memory): correct frame table bounds check
-test(locks): add high-contention scenario
+feat/scheduler: add round-robin dispatch loop
+fix/memory: correct frame table bounds check
+test/locks: add high-contention scenario
 refactor: extract pcb init helper
 ```
 
